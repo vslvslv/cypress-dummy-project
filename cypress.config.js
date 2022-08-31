@@ -4,6 +4,7 @@ const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/li
 module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://youtube.com',
+    videoCompression: 15,
     reporter: "cypress-multi-reporters",
     reporterOptions: {
         configFile: "reporter-config.json"
@@ -11,15 +12,6 @@ module.exports = defineConfig({
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
     setupNodeEvents(on, config) {
-      on('before:run', async (details) => {
-        console.log('override before:run');
-        await beforeRunHook(details);
-      });
-
-      on('after:run', async () => {
-        console.log('override after:run');
-        await afterRunHook();
-      });
       return require('./cypress/plugins/index.js')(on, config)
     },
   },
