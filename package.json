@@ -6,9 +6,12 @@
   "dependencies": {
     "cypress": "^10.7.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.2.2"
+  },
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "run:chrome": "cypress run --browser chrome"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,3 @@
-const { defineConfig } = require('cypress')
 const { defineConfig } = require('cypress');
 const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
 
