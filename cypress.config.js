@@ -3,6 +3,7 @@ const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/li
 
 module.exports = defineConfig({
   e2e: {
+    baseUrl: 'https://youtube.com',
     reporter: "cypress-multi-reporters",
     reporterOptions: {
         configFile: "reporter-config.json"
