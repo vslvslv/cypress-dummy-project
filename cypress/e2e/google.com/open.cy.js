@@ -12,7 +12,6 @@ describe('google.com', () => {
         })
 
         it('fail', () => {
-            
             cy.get('#content-section').should('not.exist')
         })
     })
