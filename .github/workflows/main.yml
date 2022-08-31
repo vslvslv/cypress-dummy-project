@@ -15,9 +15,18 @@ jobs:
     container: cypress/browsers:latest
     steps:
       - uses: actions/checkout@v2
-      
+
+      - name: Clear cache path
+        run: yarn cypress cache path
+
+      - name: Cache list
+        run: yarn cypress cache list
+
       - name: Install a project with a clean slate
         run: yarn install
+      
+      - name: Cypress verify
+        run: yarn cypress verify
       
       - name: Run Cypress tests
         run: yarn run:chrome
