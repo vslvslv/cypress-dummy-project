@@ -12,10 +12,10 @@ jobs:
   steps:
     - uses: actions/checkout@v2
     - name: Install a project with a clean slate
-        run: npm install
+      run: npm install
     
     - name: Run Cypress tests
-        run: npm run run:chrome
+      run: npm run run:chrome
         continue-on-error: true
     
     - name: Copy test execution videos
