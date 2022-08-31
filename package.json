@@ -1,0 +1,27 @@
+{
+  "name": "simplecypresspoc",
+  "version": "1.0.0",
+  "description": "simple test project",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^10.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vslvslv/simpleCypressPoc.git"
+  },
+  "keywords": [
+    "testing",
+    "cypress"
+  ],
+  "author": "vvasilev@outlook.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vslvslv/simpleCypressPoc/issues"
+  },
+  "homepage": "https://github.com/vslvslv/simpleCypressPoc#readme"
+}
