@@ -3,13 +3,9 @@ const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/li
 
 module.exports = defineConfig({
   e2e: {
-    reporter: 'cypress-mochawesome-reporter',
+    reporter: "cypress-multi-reporters",
     reporterOptions: {
-      charts: true,
-      reportPageTitle: 'custom-title',
-      embeddedScreenshots: true,
-      inlineAssets: true,
-      saveAllAttempts: false,
+        configFile: "reporter-config.json"
     },
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
