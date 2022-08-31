@@ -36,7 +36,6 @@ jobs:
         run: |
           mkdir public
           cp -r cypress/videos public/videos
-          cp -r cypress/screenshots public/screenshots
 
       - name: Merge test results into one
         run: yarn report:merge

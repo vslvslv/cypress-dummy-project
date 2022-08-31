@@ -4,6 +4,9 @@
         "reportDir": "cypress/results/json",
         "overwrite": false,
         "html": false,
-        "json": true
+        "json": true,
+        "embeddedScreenshots": true,
+        "saveAllAttempts": true,
+        "inlineAssets": true
     }
 }
