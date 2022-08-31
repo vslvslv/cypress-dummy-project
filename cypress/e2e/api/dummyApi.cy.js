@@ -2,7 +2,7 @@ describe('API Tests examples', ()=> {
 
     context('API', () => {
         
-        it('Get request', () => {
+        it.skip('Get request', () => {
             cy.request({
                 method: 'Get',
                 url: 'https://reqbin.com/echo/get/json'
