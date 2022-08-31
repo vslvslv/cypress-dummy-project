@@ -14,7 +14,8 @@
   "scripts": {
     "test": "cypress open",
     "run:chrome": "./node_modules/.bin/cypress run --browser chrome",
-    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json"
+    "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
+    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
   },
   "repository": {
     "type": "git",
