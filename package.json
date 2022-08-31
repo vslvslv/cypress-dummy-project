@@ -12,7 +12,7 @@
   },
   "scripts": {
     "test": "cypress open",
-    "run:chrome": "cypress run --browser chrome",
+    "run:chrome": "./node_modules/.bin/cypress run --browser chrome",
     "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json"
   },
   "repository": {
