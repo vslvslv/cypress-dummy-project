@@ -12,10 +12,7 @@ jobs:
   steps:
     - uses: actions/checkout@v2
     - name: Install a project with a clean slate
-        run: |
-              $(npm bin)/cypress cache path
-              $(npm bin)/cypress cache list
-              $(npm bin)/cypress verify
+        run: npm install
     
     - name: Run Cypress tests
         run: npm run run:chrome
