@@ -2,7 +2,10 @@ const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://youtube.com',
+    env: {
+      snapshotOnly: false
+    },
+    // baseUrl: 'https://reqres.in',
     videoCompression: 15,
     reporter: "cypress-multi-reporters",
     reporterOptions: {

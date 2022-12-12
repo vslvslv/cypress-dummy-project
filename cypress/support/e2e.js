@@ -26,5 +26,8 @@ Cypress.on("test:after:run", (test, runnable) => {
     addContext({ test }, videoUrl)
 });
 
+import 'cypress-plugin-api'
+
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
