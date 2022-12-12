@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "types": ["cypress", "cypress-plugin-api"],
+        "lib": ["DOM", "ES2015"],
+        "strict": true,
+        "allowJs": true,
+        "noEmit": true
+    },
+    "include": ["cypress/e2e/model.d.ts", "cypress/e2e/*cy.ts"],
+    "files": ["cypress/e2e/api/reqres.cy.ts"]
+  }

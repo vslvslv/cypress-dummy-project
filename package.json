@@ -13,10 +13,12 @@
     "mocha": "^10.0.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.2.1",
-    "mochawesome-report-generator": "^6.2.0"
+    "mochawesome-report-generator": "^6.2.0",
+    "typescript": "^4.9.4"
   },
   "scripts": {
     "test": "cypress open",
+    "lint": "tsc --noEmit --pretty --allowJs cypress/**/*.js",
     "run:chrome": "./node_modules/.bin/cypress run --browser chrome",
     "report:merge": "mochawesome-merge cypress/results/json/*.json > index.json",
     "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
